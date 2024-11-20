@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  .menu-container {
+    display: flex;
+    justify-content: center;    /* Add this */
+    color: #fff;
+    background-color: #5995DA;  /* Blue */
+    padding: 20px 0;
+  }
+  
+  .menu {
+    border: 1px solid #fff;
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .signup {
+    margin-left: auto;
+  }
+
+  .links {
+    border: 1px solid #fff;  /* For debugging */
+    display: flex;
+    justify-content: flex-end;
+  }
+  .header-container {
+    color: #5995DA;
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  /*space-between; */
+    align-items: center;  /* Add this 
+    The available options for align-items is similar to justify-content:
+
+center
+flex-start   (top)
+flex-end      (bottom)
+stretch
+baseline
+*/
+  }
+
+  .social,
+  .subscribe {
+    align-self: flex-end;
+    margin-bottom: 20px;
+  }
+  /*.social,
+.logo,
+.subscribe {
+  border: 1px solid #5995DA;
+} */
+
+  .photo-grid-container {
+    display: flex;
+    flex: 0 0 100%
+    justify-content: center;
+    flex-wrap: wrap;
+}
+  
+  .photo-grid {
+    width: 900px;
+    display: flex;
+    flex: 0 0 100%
+    justify-content: center;  /*flex-start;*/
+    flex-wrap: wrap;
+    flex-direction: row; /*row-reverse;   <--- Really freaking cool! */
+    align-items: center;
+
+    /*flex-direction: column; */
+    .first-item {
+        order: 1;
+      }
+    
+      .last-item {
+        order: -1;
+      }
+  }
+  
+  .photo-grid-item {
+    border: 1px solid #fff;
+    width: 300px;
+    height: 300px;
+  }
